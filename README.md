@@ -129,4 +129,4 @@ export default new Vuex.Store({
 })
 ```
 
-8. 我们应该通过dispatch --> actions来进行修改状态 --> 最终代码效果
+8. actions --> 我们应该通过dispatch --> actions来进行修改状态 --> 最终代码效果 --> 优点：actions可以在里面写异步代码，同时通过promise来确认是否结束
