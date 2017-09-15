@@ -4,7 +4,24 @@ Vue.use(Vuex);
 const state = {
     count:0
 };
-
+const getters = {
+    count(state){
+        return state.count + 10;
+    }
+}
+const actions = {
+    increment({commit},n){
+        commit('increment',n);
+    }
+};
+const mutations = {
+    increment(state,n){
+        state.count+=n;
+    }
+};
 export default new Vuex.Store({
-    state
+    state,
+    getters,
+    mutations,
+    actions
 })
